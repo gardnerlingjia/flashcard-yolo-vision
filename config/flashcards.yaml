@@ -1,0 +1,9 @@
+path: /Users/lingjiamacbook/Documents/projects/flashcard_segmentation/datasets/flashcards
+  # root
+
+train: images/train
+val: images/val
+
+nc: 1
+names: ['card']
+
