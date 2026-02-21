@@ -72,3 +72,26 @@ flashcard-yolo-vision/
 ├── Scripts/              # project scripts (e.g. segment_page.py)
 ├── README.md
 └── requirements.txt
+
+---
+
+## 💡 What I Learned in This Project
+
+This project helped me move beyond simply training a model and towards building a small, structured AI system.
+
+Key learnings:
+
+- **End-to-end object detection workflow**  
+  From dataset structuring and labeling to training, validation, and inference using YOLOv8.
+
+- **Reproducible ML setup**  
+  Organizing configuration files, scripts, and dependencies in a clean project structure suitable for version control.
+
+- **Bridging classical CV and LLMs**  
+  Designing a pipeline where object detection (YOLO) prepares structured visual inputs for a multimodal LLM (Gemini Vision).
+
+- **Thinking in pipelines, not scripts**  
+  Instead of treating models as isolated components, I approached the task as a modular system:
+  detection → segmentation → structured extraction → future automation.
+
+This project is a step toward building more advanced AI systems that combine perception (vision models) with reasoning (LLMs).
