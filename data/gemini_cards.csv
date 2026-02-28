@@ -1,0 +1,6 @@
+image_name,language,card_type,article,lemma,plural,part_of_speech,raw_text
+card_0.png,German,vocabulary,das,T-Shirt,T-Shirts,Nomen,das T-Shirt T-Shirt Nomen <T-Shirts>
+card_1.png,German,vocabulary,die,Weste,Westen,Nomen,"die Weste
+Wes·te Nomen <Westen>"
+card_2.png,German,vocabulary,der,Pullover,Pullover,Nomen,"der Pullover
+Pul·lo·ver Nomen <Pullover>"

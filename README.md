@@ -95,3 +95,34 @@ Key learnings:
   detection → segmentation → structured extraction → future automation.
 
 This project is a step toward building more advanced AI systems that combine perception (vision models) with reasoning (LLMs).
+
+---
+
+## 🤖 Gemini Vision Integration
+
+After detecting and segmenting flashcards with YOLO, this project integrates a Vision LLM (Google Gemini) to extract structured vocabulary data.
+
+### Pipeline Extension
+
+1. YOLO detects and crops individual flashcards
+2. Gemini Vision extracts:
+   - language
+   - article
+   - lemma (dictionary base form)
+   - plural form
+   - part of speech
+3. Structured data is saved as:
+   - JSONL (`data/gemini_cards.jsonl`)
+   - CSV (`data/gemini_cards.csv`)
+   - Anki-ready CSV (`data/anki_flashcards.csv`)
+
+### Why This Matters
+
+This demonstrates:
+
+- Hybrid AI pipeline (classical CV + Vision LLM)
+- Structured information extraction from images
+- Prompt engineering for controlled JSON output
+- Automated learning material generation
+
+This project showcases how multimodal AI can turn physical learning material into structured digital datasets.
