@@ -133,13 +133,12 @@ This project showcases how multimodal AI can turn physical learning material int
 
 ```mermaid
 flowchart LR
-    A[Input image<br/>flashcard page] --> B[YOLO model<br/>object detection]
-    B --> C[Segmentation script<br/>segment_cards.py]
-    C --> D[Flashcard images<br/>card_0.png, card_1.png, ...]
-    D --> E[Gemini Vision script<br/>gemini_extract.py]
-    E --> F[Structured JSONL<br/>data/gemini_cards.jsonl]
-    F --> G[CSV export<br/>export_to_csv.py]
-    F --> H[Anki export<br/>export_to_anki.py]
-    G --> I[Tabular data<br/>for analysis]
+    A[Input image - flashcard page] --> B[YOLO model - object detection]
+    B --> C[Segmentation script segment_cards.py]
+    C --> D[Flashcard images card_0.png, card_1.png, ...]
+    D --> E[Gemini Vision script gemini_extract.py]
+    E --> F[Structured JSONL data/gemini_cards.jsonl]
+    F --> G[CSV export export_to_csv.py]
+    F --> H[Anki export export_to_anki.py]
+    G --> I[Tabular data for analysis]
     H --> J[Flashcards in Anki]
-```
