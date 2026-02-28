@@ -126,3 +126,19 @@ This demonstrates:
 - Automated learning material generation
 
 This project showcases how multimodal AI can turn physical learning material into structured digital datasets.
+
+---
+
+## 🧩 Architecture Overview
+
+```mermaid
+flowchart LR
+    A[Input image<br/>flashcard page] --> B[YOLO model<br/>object detection]
+    B --> C[Segmentation script<br/>segment_cards.py]
+    C --> D[Flashcard images<br/>card_0.png, card_1.png, ...]
+    D --> E[Gemini Vision script<br/>gemini_extract.py]
+    E --> F[Structured JSONL<br/>data/gemini_cards.jsonl]
+    F --> G[CSV export<br/>export_to_csv.py]
+    F --> H[Anki export<br/>export_to_anki.py]
+    G --> I[Tabular data<br/>for analysis]
+    H --> J[Flashcards in Anki]
